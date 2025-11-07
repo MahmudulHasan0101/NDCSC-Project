@@ -1,0 +1,1 @@
+pip install piper-tts sounddevice numpy vosk torch yolov5 adafruit-circuitpython-ads1x15 sentence_transformer
