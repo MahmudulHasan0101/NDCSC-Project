@@ -27,6 +27,7 @@ stream = sd.RawInputStream(samplerate=16000, blocksize=8000, dtype='int16',
 
 def start(dispatcher):
     stream.start()
+    print("INFO: recognition thread started")
     threading.Thread(target=recognize_loop, args=(dispatcher,), daemon=True).start()
 
 def end():
